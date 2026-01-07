@@ -33,7 +33,7 @@ export default function Home() {
           
           <a href="/contact" className="group bg-white border border-stone-200 p-8 hover:border-stone-400 transition-all duration-300">
             <h3 className="text-xl font-light text-stone-800 mb-3 group-hover:text-stone-600">Contact</h3>
-            <p className="text-stone-500 font-light text-sm">Say hello</p>
+            <p className="text-stone-500 font-light text-sm">Contact us here!</p>
           </a>
         </div>
       </main>

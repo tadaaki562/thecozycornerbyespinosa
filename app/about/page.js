@@ -22,7 +22,7 @@ export default function About() {
               <p>
                 In a world of endless recommendations and algorithms, we believe in the power 
                 of thoughtful curation. Every book in our collection is chosen with care, 
-                selected for its ability to inspire, comfort, or transform.
+                selected for its ability to inspire.
               </p>
               <p>
                 We're not just selling books—we're creating moments of connection between 
