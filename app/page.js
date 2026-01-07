@@ -1,31 +1,49 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-amber-50">
-      <main className="container mx-auto px-4 py-16">
-        <h1 className="text-5xl font-bold text-center text-amber-900 mb-8">
-          The Cozy Corner
-        </h1>
-        <p className="text-xl text-center text-gray-700 mb-12">
-          A cozy online bookstore with hand-picked recommendations
-        </p>
+    <div className="min-h-screen bg-stone-50">
+      {/* Header */}
+      <header className="border-b border-stone-200 bg-white">
+        <div className="container mx-auto px-6 py-4">
+          <h1 className="text-2xl font-light tracking-wide text-stone-800">The Cozy Corner</h1>
+        </div>
+      </header>
+
+      <main className="container mx-auto px-6 py-20">
+        {/* Hero Section */}
+        <div className="max-w-2xl mx-auto text-center mb-20">
+          <h2 className="text-5xl font-light text-stone-800 mb-6 leading-tight">
+            Your quiet space<br />for great books
+          </h2>
+          <p className="text-lg text-stone-600 font-light">
+            Carefully curated reads for mindful moments
+          </p>
+        </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-          <a href="/about" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold text-amber-800 mb-2">About</h2>
-            <p className="text-gray-600">Learn about our story</p>
+        {/* Navigation Cards */}
+        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          <a href="/about" className="group bg-white border border-stone-200 p-8 hover:border-stone-400 transition-all duration-300">
+            <h3 className="text-xl font-light text-stone-800 mb-3 group-hover:text-stone-600">About</h3>
+            <p className="text-stone-500 font-light text-sm">Our story & philosophy</p>
           </a>
           
-          <a href="/books" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold text-amber-800 mb-2">Books</h2>
-            <p className="text-gray-600">Browse our collection</p>
+          <a href="/books" className="group bg-white border border-stone-200 p-8 hover:border-stone-400 transition-all duration-300">
+            <h3 className="text-xl font-light text-stone-800 mb-3 group-hover:text-stone-600">Books</h3>
+            <p className="text-stone-500 font-light text-sm">Explore the collection</p>
           </a>
           
-          <a href="/contact" className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition">
-            <h2 className="text-2xl font-semibold text-amber-800 mb-2">Contact</h2>
-            <p className="text-gray-600">Get in touch with us</p>
+          <a href="/contact" className="group bg-white border border-stone-200 p-8 hover:border-stone-400 transition-all duration-300">
+            <h3 className="text-xl font-light text-stone-800 mb-3 group-hover:text-stone-600">Contact</h3>
+            <p className="text-stone-500 font-light text-sm">Say hello</p>
           </a>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="border-t border-stone-200 mt-20">
+        <div className="container mx-auto px-6 py-8">
+          <p className="text-center text-stone-400 text-sm font-light">© 2026 The Cozy Corner</p>
+        </div>
+      </footer>
     </div>
   );
 }
